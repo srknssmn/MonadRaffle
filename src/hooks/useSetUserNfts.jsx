@@ -34,7 +34,7 @@ function useSetUserNfts() {
 
         const nftsArray = await response.data.result.data;
         let array = [];
-
+        console.log(nftsArray)
         for (let i = 0; i < nftsArray.length; i++) {
 
             let nftAddress = await nftsArray[i].contractAddress;
